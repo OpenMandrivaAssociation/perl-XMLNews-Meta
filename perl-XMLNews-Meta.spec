@@ -1,6 +1,6 @@
 %define module 	XMLNews-Meta
 %define version 0.01
-%define release %mkrel 7
+%define release %mkrel 8
 
 Summary:	%{module} perl module
 Name: 		perl-%{module}
@@ -20,14 +20,13 @@ Buildarch:	noarch
 %{module} - module designed to read and write an XML-based news metadata
 
 %prep
-rm -rf $RPM_BUILD_ROOT
-
 %setup -q -n %{module}-%{version}
 
 %build
-
 CFLAGS="$RPM_OPT_FLAGS" %{__perl} Makefile.PL INSTALLDIRS=vendor
 make
+
+%check
 make test
 
 %install

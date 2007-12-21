@@ -13,6 +13,7 @@ Source0:	%{module}-%{version}.tar.bz2
 BuildRequires:	perl-devel 
 BuildRequires:  perl(XML::Parser)
 Requires:	perl 
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-buildroot
 Buildarch:	noarch
 
 %description

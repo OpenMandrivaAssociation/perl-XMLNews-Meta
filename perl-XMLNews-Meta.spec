@@ -1,6 +1,6 @@
 %define module 	XMLNews-Meta
 %define version 0.01
-%define release %mkrel 10
+%define release %mkrel 11
 
 Summary:	%{module} perl module
 Name: 		perl-%{module}

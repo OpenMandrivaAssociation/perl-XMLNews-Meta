@@ -8,7 +8,7 @@ Version: 	%{version}
 Release: 	%{release}
 License:	GPL
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}
+Url:		https://search.cpan.org/dist/%{module}
 Source0:	%{module}-%{version}.tar.bz2
 BuildRequires:	perl-devel 
 BuildRequires:  perl(XML::Parser)

@@ -10,6 +10,7 @@ License:	GPL
 Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{module}
 Source0:	%{module}-%{version}.tar.bz2
+BuildRequires:	make
 BuildRequires:	perl-devel 
 BuildRequires:  perl(XML::Parser)
 Requires:	perl 
